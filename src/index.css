@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url('./assets/Font/AllianceNo1-Bold/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Oregano&family=Rubik&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black-gradient: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+html{
+  background: #121212;
+}
+* {
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #faebde -43.27%,
+    #f5ddbe -21.24%,
+    #f0cd9d 12.19%,
+    #ebb67d 29.82%,
+    #e6965c 51.94%,
+    #cf9833 90.29%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #faebde -43.27%,
+    #f5ddbe -21.24%,
+    #f0cd9d 12.19%,
+    #ebb67d 29.82%,
+    #e6965c 51.94%,
+    #cf9833 90.29%
+  );
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-black-gradient-2 {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
+.bg-gray-gradient {
+  background: linear-gradient(
+    153.47deg,
+    rgba(255, 255, 255, 0) -341.94%,
+    #14101d 95.11%
+  );
+}
+
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.feature-card:hover {
+  background: var(--black-gradient);
+  box-shadow: var(--card-shadow);
+}
+
+.feedback-container .feedback-card:last-child {
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+.orange__gradient{
+ background-color: #ff4e00;
+background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+filter: blur(523px);
+
+}
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+/* .Shresth_Link a{
+  text-decoration: none;
+  background-color: #ff4e00;
+  background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+  background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 21px;
+
+} */
+.Shresth_Link a {
+  color: #e91e63; /* Set the link color to a desired clickable color */
+  text-decoration: none; /* Remove underline by default */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+
+  /* Optionally, add additional styles to make it more visually appealing */
+  font-weight: bold; /* Make the text bold */
+  cursor: pointer; /* Change the cursor to a pointer on hover */
+}
+
+.Shresth_Link a:hover {
+  color: #c2185b; /* Change the link color on hover for emphasis */
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+.Logo_text{
+  
+  font-family: 'Alliance';
+}
+.tagline-contact{
+  font-weight: 700;
+  color:#fff !important;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  /* background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%); */
+  
+
+  font-size: 44px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.contact {
+  background-color: #121212;
+  margin-right: 70px !important;
+
+}
+@media(max-width:600px){
+  .contact{
+    height: 140vh !important;
+  }
+}
+@media (max-width : 485px){
+  .contact{
+    height: 150vh !important;
+  }
+  .contact form input, .contact form textarea{
+    width: 330px !important;
+  }
+}
+@media (max-width : 385px){
+  .contact{
+    height: 185vh !important;
+  }
+}
+.contact img {
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
+}
+@media(max-width:800px){
+  .contact .imageContact{
+    display: hidden;
+  }
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px !important;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background:#f5ddbe;
+  border: 1px solid #121212;
+  border-radius: 20px;
+  color: #121212;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #121212;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #121212;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  left: 0px !important;
+  position: relative;
+  transition: 0.3s ease-in-out;
+
+}
+@media(min-width:800px){
+  .contact form button {
+    left:268px
+  }
+}
+
+.contact form button:active{
+  color: #f6d365;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+  border-radius: 10px;
+}
+.contact form button::before {
+  content: "";
+  background:  #cf9833;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.contact form button:hover::before {
+  width: 100%;
+}
+
+.fontHeaderBuissness{
+  font-family: 'Oregano', cursive;
+}
+
+.fontparaBuissness{
+  font-family: 'Rubik', sans-serif;
+}
+
+ul {
+
+  list-style-type: disc;
+  
+}
+
